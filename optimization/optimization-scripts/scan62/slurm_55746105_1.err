@@ -1,0 +1,14 @@
++ srun -n1 --gpus-per-task=1 python -u proximal_lsq_scan_run.py --device gpu --reference wout_new_QA_aScaling_desc.h5 --output-dir scan_runs/iota_scan62_20260710_nfp2_AR3p5_iota058_noTR_baseline/job_001_nfp2_QA_AR3p5_iota0p58_stab_trw0p0_qsw5p0_pq8_eta40_100it --run-id nfp2_QA_AR3p5_iota0p58_stab_trw0p0_qsw5p0_pq8_eta40_100it --target-nfp=2 --target-aspect-ratio=3.5 --helicity-m=1 --helicity-n=0 --iota-target=-0.58 --aspect-ratio-bounds-low=3.3 --aspect-ratio-bounds-high=3.7 --qs-max-norm=0.2 --qs-norm-psi-r=true --continuation-stages 0.3 0.2 --qs-continuation-k1-only=true --qs-weight=5.0 --iota-weight=50.0 --aspect-ratio-weight=50.0 --trapped-res-weight=0.0 --tr-num-transit=5 --tr-num-rho=80 --tr-num-eta=40 --tr-num-pitch=80 --tr-num-quad=24 --tr-knots-per-transit=50 --tr-weight-method=linear --tr-delta-omega=0.25 --tr-stab-sacrifice=true --tr-jac-chunk-size=2 --tr-log-transform=false --tr-p-max=8 --tr-q-max=8 --outer-ftol=1e-10 --outer-xtol=1e-10 --outer-gtol=1e-08 --outer-maxiter=100 --outer-maxiter-final=100 --initial-trust-radius=1.0 --solve-ftol=0.005 --solve-xtol=1e-06 --solve-gtol=1e-06 --perturb-order=2 --k-max=4 --seed-3d-scale=0.01 --constraint-qs-max=0.25 --constraint-aspect-max=10.0 --x-scale=ess --ess-alpha=1.2 --ess-order=inf --ess-min-value=1e-07
+/pscratch/sd/e/epaul/codes/DESC_TrappedRes/desc/__init__.py:94: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  from pynvml import (
+/pscratch/sd/e/epaul/codes/DESC_TrappedRes/desc/io/hdf5_io.py:147: RuntimeWarning: 
+The object attribute '_ion_density' was not loaded from the file.
+This is likely because the file containing 'Equilibrium' was created before '_ion_density' became an attribute of objects of class '<class 'desc.equilibrium.equilibrium.Equilibrium'>'.
+The user may verify that a default value has been set.
+This warning will persist until the file is saved with the new object.
+
+  warnings.warn(colored(msg, "yellow"), RuntimeWarning)
+/pscratch/sd/e/epaul/codes/DESC_TrappedRes/desc/utils.py:563: FutureWarning: constants is deprecated and will be removed in a future release. Users should not include constants in the arguments of their objective compute methods. Instead declare all the constants in the build method and use as self._constants.
+  warnings.warn(msg, err)
+/pscratch/sd/e/epaul/codes/DESC_TrappedRes/desc/utils.py:563: FutureWarning: constants is deprecated and will be removed in a future release. Users should not include constants in the arguments of their objective compute methods. Instead declare all the constants in the build method and use as self._constants.
+  warnings.warn(msg, err)

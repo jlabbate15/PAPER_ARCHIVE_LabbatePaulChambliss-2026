@@ -1,0 +1,1115 @@
+Job ID: 55663324 (array 55663317_2)
+Host: nid002349
+PWD: /pscratch/sd/e/epaul/research/20260313_precise_QA_opt_example
+Output dir: scan_runs/iota_scan60_20260707_nfp2_AR3p5_iota058_hpsweep/job_002_nfp2_QA_AR3p5_iota0p58_stab_trw10p0_qsw5p0_pq8_eta40_100it
+CUDA_VISIBLE_DEVICES=0,1,2,3
+Config: {"target_nfp": 2, "target_aspect_ratio": 3.5, "helicity_m": 1, "helicity_n": 0, "iota_target": -0.58, "aspect_ratio_bounds_low": 3.3, "aspect_ratio_bounds_high": 3.7, "qs_max_norm": 0.2, "qs_norm_psi_r": true, "continuation_stages": [0.3, 0.2], "qs_continuation_k1_only": true, "qs_weight": 5.0, "iota_weight": 50.0, "aspect_ratio_weight": 50.0, "trapped_res_weight": 10.0, "tr_num_transit": 5, "tr_num_rho": 80, "tr_num_eta": 40, "tr_num_pitch": 80, "tr_num_quad": 24, "tr_knots_per_transit": 50, "tr_weight_method": "linear", "tr_delta_omega": 0.25, "tr_stab_sacrifice": true, "tr_jac_chunk_size": 2, "tr_log_transform": false, "tr_p_max": 8, "tr_q_max": 8, "outer_ftol": 1e-10, "outer_xtol": 1e-10, "outer_gtol": 1e-08, "outer_maxiter": 100, "outer_maxiter_final": 100, "initial_trust_radius": 1.0, "solve_ftol": 0.005, "solve_xtol": 1e-06, "solve_gtol": 1e-06, "perturb_order": 2, "k_max": 4, "seed_3d_scale": 0.01, "constraint_qs_max": 0.25, "constraint_aspect_max": 10.0, "x_scale": "ess", "ess_alpha": 1.2, "ess_order": 0, "ess_min_value": 1e-07}
+Args: {'run_id': 'nfp2_QA_AR3p5_iota0p58_stab_trw10p0_qsw5p0_pq8_eta40_100it', 'device': 'gpu', 'reference': 'wout_new_QA_aScaling_desc.h5', 'output_dir': 'scan_runs/iota_scan60_20260707_nfp2_AR3p5_iota058_hpsweep/job_002_nfp2_QA_AR3p5_iota0p58_stab_trw10p0_qsw5p0_pq8_eta40_100it', 'checkpoint': None, 'k_start': 1, 'continuation_verbose': 2, 'target_aspect_ratio': 3.5, 'target_nfp': 2, 'seed_3d_scale': 0.01, 'iota_target': -0.58, 'iota_bounds_low': None, 'iota_bounds_high': None, 'aspect_ratio_bounds_low': 3.3, 'aspect_ratio_bounds_high': 3.7, 'mirror_bounds_low': None, 'mirror_bounds_high': None, 'qs_max_norm': 0.2, 'qs_rho_grid': [0.25, 0.5, 0.75, 1.0], 'qs_norm_psi_r': True, 'qs_boozer': False, 'bmin_variance_weight': 0.0, 'bmin_num_field_lines': 16, 'bmin_num_transit': 2, 'bmin_num_zeta': 100, 'bmin_use_softmin': True, 'bmin_softmin_alpha': 50.0, 'continuation_stages': [0.3, 0.2], 'qs_continuation_k1_only': True, 'x_scale': 'ess', 'ess_alpha': 1.2, 'ess_order': inf, 'ess_min_value': 1e-07, 'helicity_m': 1, 'helicity_n': 0, 'iota_weight': 50.0, 'qs_weight': 5.0, 'aspect_ratio_weight': 50.0, 'mirror_ratio_weight': 5.0, 'trapped_res_weight': 10.0, 'outer_ftol': 1e-10, 'outer_xtol': 1e-10, 'outer_gtol': 1e-08, 'outer_maxiter': 100, 'outer_maxiter_final': 100, 'initial_trust_radius': 1.0, 'solve_ftol': 0.005, 'solve_xtol': 1e-06, 'solve_gtol': 1e-06, 'perturb_order': 2, 'k_max': 4, 'constraint_qs_max': 0.25, 'constraint_iota_min': 0.42, 'constraint_aspect_max': 10.0, 'tr_num_transit': 5, 'tr_num_well': 1, 'diag_tr_num_transit': None, 'diag_tr_num_well': None, 'tr_weight_method': 'linear', 'tr_delta_omega': 0.25, 'tr_stab_sacrifice': True, 'tr_num_rho': 80, 'tr_num_eta': 40, 'tr_num_pitch': 80, 'tr_num_quad': 24, 'tr_knots_per_transit': 50, 'tr_jac_chunk_size': 2, 'tr_log_transform': False, 'tr_p_max': 8, 'tr_q_max': 8, 'tr_weight_schedule': [], 'tr_transit_schedule': [], 'tr_well_schedule': [], 'tr_continuation_stages': [], 'dry_run': False}
+================
+Step 1
+================
+Spectral indexing: ansi
+Spectral resolution (L,M,N)=(4,4,0)
+Node resolution (L,M,N)=(8,8,0)
+Boundary ratio = 0
+Pressure ratio = 0
+Current ratio = 1
+Perturbation Order = 2
+Objective: force
+Optimizer: lsq-exact
+================
+Building objective: force
+Precomputing transforms
+Timer: Precomputing transforms = 779 ms
+Timer: Objective build = 1.84 sec
+Building objective: lcfs R
+Building objective: lcfs Z
+Building objective: fixed Psi
+Building objective: fixed pressure
+Building objective: fixed current
+Building objective: fixed sheet current
+Building objective: self_consistency R
+Building objective: self_consistency Z
+Building objective: lambda gauge
+Building objective: axis R self consistency
+Building objective: axis Z self consistency
+Timer: Objective build = 627 ms
+Timer: LinearConstraintProjection build = 4.47 sec
+Number of parameters: 12
+Number of objectives: 50
+Timer: Initializing the optimization = 7.01 sec
+
+Starting optimization
+Using method: lsq-exact
+   Iteration     Total nfev        Cost      Cost reduction    Step norm     Optimality   
+       0              1          7.392e-02                                    3.557e-01   
+       1              2          6.999e-03      6.692e-02      2.834e-01      9.100e-02   
+       2              3          3.432e-05      6.965e-03      1.203e-01      5.946e-03   
+       3              4          2.156e-06      3.216e-05      1.031e-01      1.644e-03   
+       4              5          7.285e-08      2.084e-06      3.977e-02      2.531e-04   
+       5              8          6.919e-09      6.594e-08      2.427e-02      6.533e-05   
+       6              9          6.835e-09      8.360e-11      4.878e-02      7.606e-05   
+       7             10          2.726e-09      4.109e-09      1.221e-02      4.811e-06   
+       8             12          2.669e-09      5.701e-11      6.098e-03      1.192e-06   
+       9             13          2.604e-09      6.471e-11      1.220e-02      4.658e-06   
+      10             15          2.552e-09      5.211e-11      6.100e-03      1.200e-06   
+      11             16          2.496e-09      5.566e-11      1.221e-02      4.715e-06   
+      12             18          2.448e-09      4.796e-11      6.102e-03      1.218e-06   
+      13             19          2.402e-09      4.632e-11      1.222e-02      4.779e-06   
+      14             20          2.347e-09      5.486e-11      1.221e-02      4.867e-06   
+      15             22          2.306e-09      4.110e-11      6.104e-03      1.256e-06   
+      16             23          2.276e-09      2.995e-11      1.222e-02      4.904e-06   
+      17             24          2.238e-09      3.861e-11      1.222e-02      5.012e-06   
+      18             25          2.206e-09      3.215e-11      1.222e-02      5.085e-06   
+      19             26          2.180e-09      2.521e-11      1.223e-02      5.162e-06   
+      20             27          2.162e-09      1.807e-11      1.223e-02      5.247e-06   
+Optimization terminated successfully.
+`ftol` condition satisfied. (ftol=1.00e-02)
+         Current function value: 2.162e-09
+         Total delta_x: 2.492e-01
+         Iterations: 20
+         Function evaluations: 27
+         Jacobian evaluations: 21
+Timer: Solution time = 24.7 sec
+Timer: Avg time per step = 1.17 sec
+==============================================================================================================
+                                                                 Start  -->   End
+Total (sum of squares):                                      7.392e-02  -->   2.162e-09, 
+Maximum absolute Force error:                                1.137e+08  -->   7.344e+04 (N)
+Minimum absolute Force error:                                7.184e-09  -->   2.961e+01 (N)
+Average absolute Force error:                                3.740e+07  -->   5.935e+03 (N)
+Maximum absolute Force error:                                1.779e-02  -->   1.149e-05 (normalized)
+Minimum absolute Force error:                                1.124e-18  -->   4.631e-09 (normalized)
+Average absolute Force error:                                5.851e-03  -->   9.284e-07 (normalized)
+R boundary error:                                            0.000e+00  -->   0.000e+00 (m)
+Z boundary error:                                            0.000e+00  -->   0.000e+00 (m)
+Fixed Psi error:                                             0.000e+00  -->   0.000e+00 (Wb)
+Fixed pressure profile error:                                0.000e+00  -->   0.000e+00 (Pa)
+Fixed current profile error:                                 0.000e+00  -->   0.000e+00 (A)
+Fixed sheet current error:                                   0.000e+00  -->   0.000e+00 (~)
+==============================================================================================================
+
+Timer: Iteration 1 total = 34.2 sec
+================
+Step 2
+================
+Spectral indexing: ansi
+Spectral resolution (L,M,N)=(4,4,4)
+Node resolution (L,M,N)=(8,8,8)
+Boundary ratio = 0.25
+Pressure ratio = 1
+Current ratio = 1
+Perturbation Order = 2
+Objective: force
+Optimizer: lsq-exact
+================
+Building objective: force
+Precomputing transforms
+Timer: Precomputing transforms = 810 ms
+Timer: Objective build = 994 ms
+Building objective: lcfs R
+Building objective: lcfs Z
+Building objective: fixed Psi
+Building objective: fixed pressure
+Building objective: fixed current
+Building objective: fixed sheet current
+Building objective: self_consistency R
+Building objective: self_consistency Z
+Building objective: lambda gauge
+Building objective: axis R self consistency
+Building objective: axis Z self consistency
+Timer: Objective build = 563 ms
+Timer: LinearConstraintProjection build = 4.33 sec
+Number of parameters: 120
+Number of objectives: 850
+Timer: Initializing the optimization = 5.96 sec
+
+Starting optimization
+Using method: lsq-exact
+   Iteration     Total nfev        Cost      Cost reduction    Step norm     Optimality   
+       0              1          2.162e-09                                    5.503e-06   
+       1              3          2.149e-09      1.299e-11      1.182e-02      5.229e-06   
+Optimization terminated successfully.
+`ftol` condition satisfied. (ftol=1.00e-02)
+         Current function value: 2.149e-09
+         Total delta_x: 1.182e-02
+         Iterations: 1
+         Function evaluations: 3
+         Jacobian evaluations: 2
+Timer: Solution time = 27.1 sec
+Timer: Avg time per step = 13.5 sec
+==============================================================================================================
+                                                                 Start  -->   End
+Total (sum of squares):                                      2.162e-09  -->   2.149e-09, 
+Maximum absolute Force error:                                7.344e+04  -->   7.433e+04 (N)
+Minimum absolute Force error:                                2.961e+01  -->   1.703e+01 (N)
+Average absolute Force error:                                5.935e+03  -->   5.903e+03 (N)
+Maximum absolute Force error:                                1.149e-05  -->   1.163e-05 (normalized)
+Minimum absolute Force error:                                4.631e-09  -->   2.664e-09 (normalized)
+Average absolute Force error:                                9.284e-07  -->   9.234e-07 (normalized)
+R boundary error:                                            0.000e+00  -->   0.000e+00 (m)
+Z boundary error:                                            0.000e+00  -->   0.000e+00 (m)
+Fixed Psi error:                                             0.000e+00  -->   0.000e+00 (Wb)
+Fixed pressure profile error:                                0.000e+00  -->   0.000e+00 (Pa)
+Fixed current profile error:                                 0.000e+00  -->   0.000e+00 (A)
+Fixed sheet current error:                                   0.000e+00  -->   0.000e+00 (~)
+==============================================================================================================
+
+Timer: Iteration 2 total = 34.5 sec
+================
+Step 3
+================
+Spectral indexing: ansi
+Spectral resolution (L,M,N)=(4,4,4)
+Node resolution (L,M,N)=(8,8,8)
+Boundary ratio = 0.5
+Pressure ratio = 1
+Current ratio = 1
+Perturbation Order = 2
+Objective: force
+Optimizer: lsq-exact
+================
+Building objective: force
+Precomputing transforms
+Timer: Precomputing transforms = 95.8 ms
+Timer: Objective build = 107 ms
+Building objective: lcfs R
+Building objective: lcfs Z
+Building objective: fixed Psi
+Building objective: fixed pressure
+Building objective: fixed current
+Building objective: fixed sheet current
+Building objective: self_consistency R
+Building objective: self_consistency Z
+Building objective: lambda gauge
+Building objective: axis R self consistency
+Building objective: axis Z self consistency
+Timer: Objective build = 144 ms
+Timer: LinearConstraintProjection build = 71.7 ms
+Number of parameters: 120
+Number of objectives: 850
+Timer: Initializing the optimization = 324 ms
+
+Starting optimization
+Using method: lsq-exact
+   Iteration     Total nfev        Cost      Cost reduction    Step norm     Optimality   
+       0              1          2.149e-09                                    5.229e-06   
+       1              3          2.130e-09      1.927e-11      5.720e-03      1.306e-06   
+Optimization terminated successfully.
+`ftol` condition satisfied. (ftol=1.00e-02)
+         Current function value: 2.130e-09
+         Total delta_x: 5.720e-03
+         Iterations: 1
+         Function evaluations: 3
+         Jacobian evaluations: 2
+Timer: Solution time = 49.9 ms
+Timer: Avg time per step = 24.9 ms
+==============================================================================================================
+                                                                 Start  -->   End
+Total (sum of squares):                                      2.149e-09  -->   2.130e-09, 
+Maximum absolute Force error:                                7.433e+04  -->   7.415e+04 (N)
+Minimum absolute Force error:                                1.703e+01  -->   8.950e+01 (N)
+Average absolute Force error:                                5.903e+03  -->   5.914e+03 (N)
+Maximum absolute Force error:                                1.163e-05  -->   1.160e-05 (normalized)
+Minimum absolute Force error:                                2.664e-09  -->   1.400e-08 (normalized)
+Average absolute Force error:                                9.234e-07  -->   9.251e-07 (normalized)
+R boundary error:                                            0.000e+00  -->   0.000e+00 (m)
+Z boundary error:                                            0.000e+00  -->   0.000e+00 (m)
+Fixed Psi error:                                             0.000e+00  -->   0.000e+00 (Wb)
+Fixed pressure profile error:                                0.000e+00  -->   0.000e+00 (Pa)
+Fixed current profile error:                                 0.000e+00  -->   0.000e+00 (A)
+Fixed sheet current error:                                   0.000e+00  -->   0.000e+00 (~)
+==============================================================================================================
+
+Timer: Iteration 3 total = 587 ms
+================
+Step 4
+================
+Spectral indexing: ansi
+Spectral resolution (L,M,N)=(4,4,4)
+Node resolution (L,M,N)=(8,8,8)
+Boundary ratio = 0.75
+Pressure ratio = 1
+Current ratio = 1
+Perturbation Order = 2
+Objective: force
+Optimizer: lsq-exact
+================
+Building objective: force
+Precomputing transforms
+Timer: Precomputing transforms = 95.0 ms
+Timer: Objective build = 105 ms
+Building objective: lcfs R
+Building objective: lcfs Z
+Building objective: fixed Psi
+Building objective: fixed pressure
+Building objective: fixed current
+Building objective: fixed sheet current
+Building objective: self_consistency R
+Building objective: self_consistency Z
+Building objective: lambda gauge
+Building objective: axis R self consistency
+Building objective: axis Z self consistency
+Timer: Objective build = 143 ms
+Timer: LinearConstraintProjection build = 65.5 ms
+Number of parameters: 120
+Number of objectives: 850
+Timer: Initializing the optimization = 316 ms
+
+Starting optimization
+Using method: lsq-exact
+   Iteration     Total nfev        Cost      Cost reduction    Step norm     Optimality   
+       0              1          2.130e-09                                    1.306e-06   
+       1              3          2.128e-09      1.961e-12      3.285e-03      4.312e-07   
+Optimization terminated successfully.
+`ftol` condition satisfied. (ftol=1.00e-02)
+         Current function value: 2.128e-09
+         Total delta_x: 3.285e-03
+         Iterations: 1
+         Function evaluations: 3
+         Jacobian evaluations: 2
+Timer: Solution time = 45.7 ms
+Timer: Avg time per step = 22.8 ms
+==============================================================================================================
+                                                                 Start  -->   End
+Total (sum of squares):                                      2.130e-09  -->   2.128e-09, 
+Maximum absolute Force error:                                7.415e+04  -->   7.431e+04 (N)
+Minimum absolute Force error:                                8.950e+01  -->   1.504e+02 (N)
+Average absolute Force error:                                5.914e+03  -->   5.919e+03 (N)
+Maximum absolute Force error:                                1.160e-05  -->   1.162e-05 (normalized)
+Minimum absolute Force error:                                1.400e-08  -->   2.353e-08 (normalized)
+Average absolute Force error:                                9.251e-07  -->   9.258e-07 (normalized)
+R boundary error:                                            0.000e+00  -->   0.000e+00 (m)
+Z boundary error:                                            0.000e+00  -->   0.000e+00 (m)
+Fixed Psi error:                                             0.000e+00  -->   0.000e+00 (Wb)
+Fixed pressure profile error:                                0.000e+00  -->   0.000e+00 (Pa)
+Fixed current profile error:                                 0.000e+00  -->   0.000e+00 (A)
+Fixed sheet current error:                                   0.000e+00  -->   0.000e+00 (~)
+==============================================================================================================
+
+Timer: Iteration 4 total = 574 ms
+================
+Step 5
+================
+Spectral indexing: ansi
+Spectral resolution (L,M,N)=(4,4,4)
+Node resolution (L,M,N)=(8,8,8)
+Boundary ratio = 1.0
+Pressure ratio = 1
+Current ratio = 1
+Perturbation Order = 2
+Objective: force
+Optimizer: lsq-exact
+================
+Building objective: force
+Precomputing transforms
+Timer: Precomputing transforms = 94.3 ms
+Timer: Objective build = 105 ms
+Building objective: lcfs R
+Building objective: lcfs Z
+Building objective: fixed Psi
+Building objective: fixed pressure
+Building objective: fixed current
+Building objective: fixed sheet current
+Building objective: self_consistency R
+Building objective: self_consistency Z
+Building objective: lambda gauge
+Building objective: axis R self consistency
+Building objective: axis Z self consistency
+Timer: Objective build = 146 ms
+Timer: LinearConstraintProjection build = 66.4 ms
+Number of parameters: 120
+Number of objectives: 850
+Timer: Initializing the optimization = 318 ms
+
+Starting optimization
+Using method: lsq-exact
+   Iteration     Total nfev        Cost      Cost reduction    Step norm     Optimality   
+       0              1          2.128e-09                                    4.312e-07   
+       1              3          2.128e-09      4.227e-13      1.778e-03      1.278e-07   
+Optimization terminated successfully.
+`ftol` condition satisfied. (ftol=1.00e-02)
+         Current function value: 2.128e-09
+         Total delta_x: 1.778e-03
+         Iterations: 1
+         Function evaluations: 3
+         Jacobian evaluations: 2
+Timer: Solution time = 45.4 ms
+Timer: Avg time per step = 22.7 ms
+==============================================================================================================
+                                                                 Start  -->   End
+Total (sum of squares):                                      2.128e-09  -->   2.128e-09, 
+Maximum absolute Force error:                                7.431e+04  -->   7.442e+04 (N)
+Minimum absolute Force error:                                1.504e+02  -->   1.509e+02 (N)
+Average absolute Force error:                                5.919e+03  -->   5.920e+03 (N)
+Maximum absolute Force error:                                1.162e-05  -->   1.164e-05 (normalized)
+Minimum absolute Force error:                                2.353e-08  -->   2.360e-08 (normalized)
+Average absolute Force error:                                9.258e-07  -->   9.261e-07 (normalized)
+R boundary error:                                            0.000e+00  -->   0.000e+00 (m)
+Z boundary error:                                            0.000e+00  -->   0.000e+00 (m)
+Fixed Psi error:                                             0.000e+00  -->   0.000e+00 (Wb)
+Fixed pressure profile error:                                0.000e+00  -->   0.000e+00 (Pa)
+Fixed current profile error:                                 0.000e+00  -->   0.000e+00 (A)
+Fixed sheet current error:                                   0.000e+00  -->   0.000e+00 (~)
+==============================================================================================================
+
+Timer: Iteration 5 total = 569 ms
+====================
+Done
+Timer: Total time = 1.33 min
+====================
+Cold-start: NFP=2, AR_req=3.5000, AR_after=3.5000, <|B|>_vol_ref=5.8560 T -> achieved=5.8560 T (-0.000%)
+NFP=2; QS helicity (M, N_full) = (1, 0) (HELICITY_M=1, HELICITY_N=0 per-FP; QA)
+  Seeded 36 3D bdry R_lmn modes from reference at scale 0.01: ||R_lmn_3D||2=2.389e-02, max|.|=1.656e-02
+  Seeded 36 3D bdry Z_lmn modes from reference at scale 0.01: ||Z_lmn_3D||2=1.809e-02, max|.|=1.270e-02
+  Re-solving seeded equilibrium back onto GS manifold ...
+Building objective: force
+Precomputing transforms
+Timer: Precomputing transforms = 96.2 ms
+Timer: Objective build = 108 ms
+Building objective: lcfs R
+Building objective: lcfs Z
+Building objective: fixed Psi
+Building objective: fixed pressure
+Building objective: fixed current
+Building objective: fixed sheet current
+Building objective: self_consistency R
+Building objective: self_consistency Z
+Building objective: lambda gauge
+Building objective: axis R self consistency
+Building objective: axis Z self consistency
+Timer: Objective build = 146 ms
+Timer: LinearConstraintProjection build = 70.8 ms
+Number of parameters: 120
+Number of objectives: 850
+Timer: Initializing the optimization = 325 ms
+
+Starting optimization
+Using method: lsq-exact
+   Iteration     Total nfev        Cost      Cost reduction    Step norm     Optimality   
+       0              1          5.115e-03                                    6.745e-02   
+       1              2          1.049e-04      5.010e-03      1.570e-01      5.630e-03   
+       2              3          8.194e-06      9.670e-05      1.332e-01      1.182e-03   
+       3              4          6.144e-07      7.579e-06      7.774e-02      3.225e-04   
+       4              5          2.937e-08      5.851e-07      3.094e-02      6.195e-05   
+       5              6          2.907e-09      2.646e-08      1.591e-02      1.775e-05   
+       6              7          2.605e-09      3.021e-10      2.751e-02      3.602e-05   
+       7              8          8.985e-10      1.706e-09      6.686e-03      3.741e-06   
+       8              9          8.790e-10      1.954e-11      1.351e-02      9.017e-06   
+       9             10          8.462e-10      3.281e-11      1.337e-02      1.007e-05   
+      10             11          7.922e-10      5.397e-11      1.335e-02      1.036e-05   
+      11             12          7.414e-10      5.081e-11      1.326e-02      1.101e-05   
+      12             13          6.865e-10      5.487e-11      1.324e-02      1.217e-05   
+      13             14          6.410e-10      4.554e-11      1.316e-02      1.283e-05   
+      14             15          4.766e-10      1.643e-10      3.279e-03      4.699e-07   
+      15             16          4.618e-10      1.488e-11      6.587e-03      1.975e-06   
+      16             18          4.525e-10      9.306e-12      3.285e-03      4.771e-07   
+      17             19          4.453e-10      7.186e-12      6.580e-03      1.816e-06   
+      18             20          4.393e-10      5.980e-12      6.570e-03      1.733e-06   
+      19             22          4.355e-10      3.745e-12      2.613e-03      2.527e-07   
+Optimization terminated successfully.
+`ftol` condition satisfied. (ftol=1.00e-02)
+         Current function value: 4.355e-10
+         Total delta_x: 2.732e-01
+         Iterations: 19
+         Function evaluations: 22
+         Jacobian evaluations: 20
+Timer: Solution time = 417 ms
+Timer: Avg time per step = 20.8 ms
+==============================================================================================================
+                                                                 Start  -->   End
+Total (sum of squares):                                      5.115e-03  -->   4.355e-10, 
+Maximum absolute Force error:                                1.667e+08  -->   4.032e+04 (N)
+Minimum absolute Force error:                                8.001e+02  -->   7.182e-01 (N)
+Average absolute Force error:                                7.510e+06  -->   2.245e+03 (N)
+Maximum absolute Force error:                                2.608e-02  -->   6.307e-06 (normalized)
+Minimum absolute Force error:                                1.252e-07  -->   1.123e-10 (normalized)
+Average absolute Force error:                                1.175e-03  -->   3.512e-07 (normalized)
+R boundary error:                                            0.000e+00  -->   4.345e-19 (m)
+Z boundary error:                                            0.000e+00  -->   4.337e-19 (m)
+Fixed Psi error:                                             0.000e+00  -->   0.000e+00 (Wb)
+Fixed pressure profile error:                                0.000e+00  -->   0.000e+00 (Pa)
+Fixed current profile error:                                 0.000e+00  -->   0.000e+00 (A)
+Fixed sheet current error:                                   0.000e+00  -->   0.000e+00 (~)
+==============================================================================================================
+
+    [initial cold-start]
+      |F|/F_scale  max=3.999e-07  mean=5.309e-08
+      mean(iota)   = -0.000068   (target -0.580000)
+      aspect_ratio = 3.5000
+      max|f_C|/B^3 per surface  rho=0.25:2.848e-03  rho=0.50:3.479e-03  rho=0.75:5.081e-03  rho=1.00:8.244e-03   global=8.244e-03
+      mirror per surface  rho=0.25:0.075  rho=0.50:0.146  rho=0.75:0.216  rho=1.00:0.283   global_max=0.283
+
+--- Multigrid k=1 stage 1/2 qs_bound=0.3 tr_res=5/1, helicity=(1, 0) (QA) ---
+Building objective: TrappedResonance
+Precomputing transforms
+Timer: Precomputing transforms = 897 ms
+Building objective: rotational transform
+Precomputing transforms
+Timer: Precomputing transforms = 41.7 ms
+Building objective: QS two-term normalized
+Precomputing transforms
+Timer: Precomputing transforms = 84.6 ms
+Building objective: aspect ratio
+Precomputing transforms
+Timer: Precomputing transforms = 38.6 ms
+Timer: Objective build = 1.81 sec
+Building objective: force
+Precomputing transforms
+Timer: Precomputing transforms = 96.7 ms
+Timer: Objective build = 107 ms
+Timer: Objective build = 2.18 ms
+Timer: Eq Update LinearConstraintProjection build = 2.32 sec
+Timer: Proximal projection build = 31.0 sec
+Building objective: lcfs R
+Building objective: lcfs Z
+Building objective: fixed pressure
+Building objective: fixed current
+Building objective: fixed Psi
+Timer: Objective build = 260 ms
+Timer: LinearConstraintProjection build = 2.29 sec
+Number of parameters: 8
+Number of objectives: 697
+Timer: Initializing the optimization = 35.3 sec
+
+Starting optimization
+Using method: proximal-lsq-exact
+Solver options:
+------------------------------------------------------------
+Maximum Function Evaluations       : 501
+Maximum Allowed Total Δx Norm      : inf
+Scaled Termination                 : True
+Trust Region Method                : qr
+Initial Trust Radius               : 1.000e+00
+Maximum Trust Radius               : 1.000e+00
+Minimum Trust Radius               : 2.220e-16
+Trust Radius Increase Ratio        : 2.000e+00
+Trust Radius Decrease Ratio        : 2.500e-01
+Trust Radius Increase Threshold    : 7.500e-01
+Trust Radius Decrease Threshold    : 2.500e-01
+------------------------------------------------------------ 
+
+   Iteration     Total nfev        Cost      Cost reduction    Step norm     Optimality   
+       0              1          4.204e+02                                    3.558e+00   
+       1              2          2.808e+02      1.396e+02      1.000e+00      1.177e+02   
+       2              4          2.240e+02      5.676e+01      2.500e-01      1.731e+02   
+       3              5          1.333e+02      9.072e+01      5.000e-01      1.713e+03   
+       4              6          1.146e+02      1.867e+01      1.910e-01      4.500e+02   
+       5              7          1.141e+02      5.363e-01      5.082e-01      2.096e+02   
+       6              8          1.098e+02      4.259e+00      1.270e-01      2.775e+02   
+       7              9          1.008e+02      9.028e+00      2.541e-01      1.479e+02   
+       8             10          9.473e+01      6.076e+00      2.704e-01      1.345e+02   
+       9             11          8.704e+01      7.693e+00      5.036e-01      1.189e+02   
+      10             14          8.613e+01      9.115e-01      5.240e-02      1.358e+03   
+      11             15          7.715e+01      8.976e+00      1.310e-02      3.988e+02   
+      12             16          7.105e+01      6.099e+00      2.620e-02      1.344e+02   
+      13             17          6.986e+01      1.193e+00      5.240e-02      8.967e+01   
+      14             18          6.247e+01      7.389e+00      1.048e-01      3.650e+02   
+      15             19          5.128e+01      1.119e+01      2.096e-01      5.262e+02   
+      16             20          4.777e+01      3.504e+00      4.192e-01      1.398e+02   
+      17             21          3.847e+01      9.298e+00      2.546e-01      1.610e+02   
+      18             22          3.774e+01      7.374e-01      1.959e-01      7.053e+01   
+      19             23          3.479e+01      2.942e+00      3.017e-01      1.184e+02   
+      20             24          2.837e+01      6.429e+00      6.033e-01      3.138e+01   
+      21             26          2.823e+01      1.395e-01      1.566e-01      6.166e+01   
+      22             28          2.654e+01      1.685e+00      3.916e-02      4.148e+02   
+      23             29          2.195e+01      4.594e+00      3.916e-02      1.629e+02   
+      24             30          1.922e+01      2.732e+00      7.831e-02      8.847e+01   
+      25             31          1.541e+01      3.805e+00      1.566e-01      8.561e+01   
+      26             33          1.515e+01      2.596e-01      7.831e-02      6.307e+01   
+      27             34          1.495e+01      2.029e-01      7.831e-02      4.609e+01   
+      28             35          1.469e+01      2.602e-01      7.831e-02      4.400e+01   
+      29             37          1.357e+01      1.114e+00      3.916e-02      5.564e+02   
+      30             38          8.931e+00      4.643e+00      3.916e-02      1.596e+02   
+      31             39          8.044e+00      8.871e-01      7.831e-02      6.110e+01   
+      32             40          7.801e+00      2.429e-01      1.260e-01      2.830e+01   
+      33             41          5.637e+00      2.164e+00      2.519e-01      3.640e+01   
+      34             42          3.808e+00      1.829e+00      2.888e-01      9.902e+01   
+      35             43          3.455e+00      3.531e-01      1.885e-01      6.363e+01   
+      36             44          2.932e+00      5.225e-01      5.412e-01      9.980e+01   
+      37             47          1.615e+00      1.317e+00      6.250e-02      2.391e+01   
+      38             48          7.064e-01      9.088e-01      1.250e-01      2.432e+01   
+      39             50          5.266e-01      1.798e-01      6.250e-02      8.636e+00   
+      40             52          4.846e-01      4.202e-02      3.125e-02      5.647e+00   
+      41             53          4.628e-01      2.179e-02      6.250e-02      1.739e+01   
+      42             54          4.194e-01      4.338e-02      6.250e-02      7.073e+01   
+      43             55          4.063e-01      1.314e-02      6.250e-02      7.801e+00   
+      44             56          3.463e-01      5.998e-02      6.250e-02      6.357e+00   
+      45             57          3.126e-01      3.367e-02      1.250e-01      2.503e+00   
+      46             58          2.981e-01      1.456e-02      2.500e-01      1.848e+01   
+      47             59          2.625e-01      3.559e-02      2.500e-01      9.119e+00   
+      48             86          2.625e-01      0.000e+00      0.000e+00      9.119e+00   
+Warning: A bad approximation caused failure to predict improvement.
+         Current function value: 2.625e-01
+         Total delta_x: 4.201e+00
+         Iterations: 48
+         Function evaluations: 86
+         Jacobian evaluations: 48
+Timer: Solution time = 6.01 min
+Timer: Avg time per step = 7.36 sec
+==============================================================================================================
+                                                                 Start  -->   End
+Total (sum of squares):                                      4.204e+02  -->   2.625e-01, 
+Maximum Trapped EP Resonance Penalty:                        0.000e+00  -->   1.600e-02 ~
+Minimum Trapped EP Resonance Penalty:                        0.000e+00  -->   0.000e+00 ~
+Average Trapped EP Resonance Penalty:                        0.000e+00  -->   1.872e-03 ~
+Maximum Trapped EP Resonance Penalty:                        0.000e+00  -->   1.600e-02 (normalized)
+Minimum Trapped EP Resonance Penalty:                        0.000e+00  -->   0.000e+00 (normalized)
+Average Trapped EP Resonance Penalty:                        0.000e+00  -->   1.872e-03 (normalized)
+Maximum Rotational transform:                               -6.705e-05  -->  -5.596e-01 (dimensionless)
+Minimum Rotational transform:                               -6.970e-05  -->  -5.908e-01 (dimensionless)
+Average Rotational transform:                               -6.787e-05  -->  -5.764e-01 (dimensionless)
+Maximum Quasi-symmetry (1,0) two-term normalized error:      1.913e-01  -->   4.591e+00 (T^2/m^2)
+Minimum Quasi-symmetry (1,0) two-term normalized error:     -1.896e-01  -->  -4.299e+00 (T^2/m^2)
+Average Quasi-symmetry (1,0) two-term normalized error:      4.280e-05  -->  -1.458e-02 (T^2/m^2)
+Maximum Quasi-symmetry (1,0) two-term normalized error:      1.424e-02  -->   3.418e-01 (normalized)
+Minimum Quasi-symmetry (1,0) two-term normalized error:     -1.412e-02  -->  -3.201e-01 (normalized)
+Average Quasi-symmetry (1,0) two-term normalized error:      3.187e-06  -->  -1.085e-03 (normalized)
+Aspect ratio:                                                3.500e+00  -->   3.302e+00 (dimensionless)
+Maximum absolute Force error:                                4.032e+04  -->   3.693e+07 (N)
+Minimum absolute Force error:                                7.182e-01  -->   1.183e+03 (N)
+Average absolute Force error:                                2.245e+03  -->   2.676e+06 (N)
+Maximum absolute Force error:                                6.307e-06  -->   5.777e-03 (normalized)
+Minimum absolute Force error:                                1.123e-10  -->   1.850e-07 (normalized)
+Average absolute Force error:                                3.512e-07  -->   4.186e-04 (normalized)
+R boundary error:                                            2.732e-20  -->   0.000e+00 (m)
+Z boundary error:                                            4.337e-19  -->   4.337e-19 (m)
+Fixed pressure profile error:                                0.000e+00  -->   0.000e+00 (Pa)
+Fixed current profile error:                                 0.000e+00  -->   0.000e+00 (A)
+Fixed Psi error:                                             0.000e+00  -->   0.000e+00 (Wb)
+==============================================================================================================
+
+    [after k=1 stage 1/2 qs_bound=0.3 tr_res=5/1]
+      |F|/F_scale  max=1.834e-03  mean=1.466e-04
+      mean(iota)   = -0.578649   (target -0.580000)
+      aspect_ratio = 3.3015
+      max|f_C|/B^3 per surface  rho=0.25:5.049e-01  rho=0.50:9.272e-01  rho=0.75:1.417e+00  rho=1.00:2.241e+00   global=2.241e+00
+      mirror per surface  rho=0.25:0.111  rho=0.50:0.214  rho=0.75:0.303  rho=1.00:0.377   global_max=0.377
+
+--- Multigrid k=1 stage 2/2 qs_bound=0.2 tr_res=5/1, helicity=(1, 0) (QA) ---
+Building objective: TrappedResonance
+Precomputing transforms
+Timer: Precomputing transforms = 75.5 ms
+Building objective: rotational transform
+Precomputing transforms
+Timer: Precomputing transforms = 40.0 ms
+Building objective: QS two-term normalized
+Precomputing transforms
+Timer: Precomputing transforms = 86.6 ms
+Building objective: aspect ratio
+Precomputing transforms
+Timer: Precomputing transforms = 38.9 ms
+Timer: Objective build = 270 ms
+Building objective: force
+Precomputing transforms
+Timer: Precomputing transforms = 93.8 ms
+Timer: Objective build = 104 ms
+Timer: Objective build = 2.00 ms
+Timer: Eq Update LinearConstraintProjection build = 62.3 ms
+Timer: Proximal projection build = 1.21 sec
+Building objective: lcfs R
+Building objective: lcfs Z
+Building objective: fixed pressure
+Building objective: fixed current
+Building objective: fixed Psi
+Timer: Objective build = 116 ms
+Timer: LinearConstraintProjection build = 163 ms
+Number of parameters: 8
+Number of objectives: 697
+Timer: Initializing the optimization = 1.68 sec
+
+Starting optimization
+Using method: proximal-lsq-exact
+Solver options:
+------------------------------------------------------------
+Maximum Function Evaluations       : 501
+Maximum Allowed Total Δx Norm      : inf
+Scaled Termination                 : True
+Trust Region Method                : qr
+Initial Trust Radius               : 1.000e+00
+Maximum Trust Radius               : 1.000e+00
+Minimum Trust Radius               : 2.220e-16
+Trust Radius Increase Ratio        : 2.000e+00
+Trust Radius Decrease Ratio        : 2.500e-01
+Trust Radius Increase Threshold    : 7.500e-01
+Trust Radius Decrease Threshold    : 2.500e-01
+------------------------------------------------------------ 
+
+   Iteration     Total nfev        Cost      Cost reduction    Step norm     Optimality   
+       0              1          3.018e+04                                    1.626e+05   
+       1              2          4.728e+03      2.545e+04      8.000e-01      2.031e+04   
+       2              3          1.340e+03      3.388e+03      1.000e+00      9.972e+03   
+       3              4          1.156e+03      1.832e+02      1.000e+00      1.171e+04   
+       4              5          7.558e+02      4.006e+02      4.219e-01      4.248e+03   
+       5              6          6.108e+02      1.450e+02      1.903e-01      2.069e+03   
+       6              7          5.874e+02      2.339e+01      2.014e-01      1.405e+03   
+       7              8          5.836e+02      3.799e+00      1.067e-01      4.617e+02   
+       8             10          5.832e+02      3.547e-01      3.381e-03      1.233e+03   
+       9             33          5.832e+02      0.000e+00      0.000e+00      1.233e+03   
+Warning: A bad approximation caused failure to predict improvement.
+         Current function value: 5.832e+02
+         Total delta_x: 1.663e+00
+         Iterations: 9
+         Function evaluations: 33
+         Jacobian evaluations: 9
+Timer: Solution time = 57.2 sec
+Timer: Avg time per step = 5.72 sec
+==============================================================================================================
+                                                                 Start  -->   End
+Total (sum of squares):                                      3.018e+04  -->   5.832e+02, 
+Maximum Trapped EP Resonance Penalty:                        1.557e-02  -->   1.270e-01 ~
+Minimum Trapped EP Resonance Penalty:                        0.000e+00  -->   4.325e-05 ~
+Average Trapped EP Resonance Penalty:                        1.998e-03  -->   2.038e-02 ~
+Maximum Trapped EP Resonance Penalty:                        1.557e-02  -->   1.270e-01 (normalized)
+Minimum Trapped EP Resonance Penalty:                        0.000e+00  -->   4.325e-05 (normalized)
+Average Trapped EP Resonance Penalty:                        1.998e-03  -->   2.038e-02 (normalized)
+Maximum Rotational transform:                               -5.588e-01  -->  -3.595e-01 (dimensionless)
+Minimum Rotational transform:                               -5.908e-01  -->  -3.949e-01 (dimensionless)
+Average Rotational transform:                               -5.761e-01  -->  -3.805e-01 (dimensionless)
+Maximum Quasi-symmetry (1,0) two-term normalized error:      4.591e+00  -->   2.348e+00 (T^2/m^2)
+Minimum Quasi-symmetry (1,0) two-term normalized error:     -4.299e+00  -->  -1.375e+00 (T^2/m^2)
+Average Quasi-symmetry (1,0) two-term normalized error:     -1.458e-02  -->   1.104e-02 (T^2/m^2)
+Maximum Quasi-symmetry (1,0) two-term normalized error:      2.801e+00  -->   1.432e+00 (normalized)
+Minimum Quasi-symmetry (1,0) two-term normalized error:     -2.623e+00  -->  -8.386e-01 (normalized)
+Average Quasi-symmetry (1,0) two-term normalized error:     -8.893e-03  -->   6.734e-03 (normalized)
+Aspect ratio:                                                3.302e+00  -->   2.841e+00 (dimensionless)
+Maximum absolute Force error:                                3.693e+07  -->   9.579e+06 (N)
+Minimum absolute Force error:                                1.183e+03  -->   5.294e+03 (N)
+Average absolute Force error:                                2.676e+06  -->   8.695e+05 (N)
+Maximum absolute Force error:                                1.654e-02  -->   4.289e-03 (normalized)
+Minimum absolute Force error:                                5.295e-07  -->   2.370e-06 (normalized)
+Average absolute Force error:                                1.198e-03  -->   3.893e-04 (normalized)
+R boundary error:                                            2.185e-19  -->   0.000e+00 (m)
+Z boundary error:                                            4.140e-20  -->   0.000e+00 (m)
+Fixed pressure profile error:                                0.000e+00  -->   0.000e+00 (Pa)
+Fixed current profile error:                                 0.000e+00  -->   0.000e+00 (A)
+Fixed Psi error:                                             0.000e+00  -->   0.000e+00 (Wb)
+==============================================================================================================
+
+    [after k=1 stage 2/2 qs_bound=0.2 tr_res=5/1]
+      |F|/F_scale  max=3.456e-04  mean=4.032e-05
+      mean(iota)   = -0.382732   (target -0.580000)
+      aspect_ratio = 2.8413
+      max|f_C|/B^3 per surface  rho=0.25:7.148e-02  rho=0.50:1.583e-01  rho=0.75:5.033e-01  rho=1.00:1.104e+00   global=1.104e+00
+      mirror per surface  rho=0.25:0.089  rho=0.50:0.175  rho=0.75:0.265  rho=1.00:0.351   global_max=0.351
+
+--- Multigrid k=2 stage 1/2 qs_bound=0.2 tr_res=5/1, helicity=(1, 0) (QA) ---
+Building objective: TrappedResonance
+Precomputing transforms
+Timer: Precomputing transforms = 77.6 ms
+Building objective: rotational transform
+Precomputing transforms
+Timer: Precomputing transforms = 42.0 ms
+Building objective: QS two-term normalized
+Precomputing transforms
+Timer: Precomputing transforms = 91.6 ms
+Building objective: aspect ratio
+Precomputing transforms
+Timer: Precomputing transforms = 40.8 ms
+Timer: Objective build = 284 ms
+Building objective: force
+Precomputing transforms
+Timer: Precomputing transforms = 96.2 ms
+Timer: Objective build = 106 ms
+Timer: Objective build = 2.07 ms
+Timer: Eq Update LinearConstraintProjection build = 55.9 ms
+Timer: Proximal projection build = 1.18 sec
+Building objective: lcfs R
+Building objective: lcfs Z
+Building objective: fixed pressure
+Building objective: fixed current
+Building objective: fixed Psi
+Timer: Objective build = 409 ms
+Timer: LinearConstraintProjection build = 2.89 sec
+Number of parameters: 24
+Number of objectives: 697
+Timer: Initializing the optimization = 5.07 sec
+
+Starting optimization
+Using method: proximal-lsq-exact
+Solver options:
+------------------------------------------------------------
+Maximum Function Evaluations       : 501
+Maximum Allowed Total Δx Norm      : inf
+Scaled Termination                 : True
+Trust Region Method                : qr
+Initial Trust Radius               : 1.000e+00
+Maximum Trust Radius               : inf
+Minimum Trust Radius               : 2.220e-16
+Trust Radius Increase Ratio        : 2.000e+00
+Trust Radius Decrease Ratio        : 2.500e-01
+Trust Radius Increase Threshold    : 7.500e-01
+Trust Radius Decrease Threshold    : 2.500e-01
+------------------------------------------------------------ 
+
+   Iteration     Total nfev        Cost      Cost reduction    Step norm     Optimality   
+       0              1          5.494e+02                                    1.043e+03   
+       1              2          2.760e+02      2.734e+02      4.381e-01      2.046e+03   
+       2              4          1.394e+02      1.366e+02      3.019e-01      1.239e+03   
+       3              5          8.593e+01      5.349e+01      3.757e-01      3.101e+03   
+       4              7          6.159e+01      2.434e+01      1.422e-01      9.500e+02   
+       5              8          5.642e+01      5.169e+00      1.468e-01      1.738e+03   
+       6             10          5.287e+01      3.543e+00      7.964e-02      3.061e+02   
+       7             11          4.828e+01      4.591e+00      1.803e-01      6.400e+02   
+       8             13          4.578e+01      2.506e+00      1.052e-01      1.007e+03   
+       9             14          4.006e+01      5.721e+00      2.100e-01      1.340e+02   
+      10             16          3.486e+01      5.200e+00      1.184e-01      1.135e+03   
+      11             17          3.142e+01      3.434e+00      1.854e-01      2.874e+03   
+      12             18          2.006e+01      1.137e+01      1.594e-01      6.215e+02   
+      13             19          1.955e+01      5.104e-01      3.449e-01      1.843e+03   
+      14             20          1.400e+01      5.543e+00      1.054e-01      1.448e+03   
+      15             21          1.061e+01      3.397e+00      1.649e-01      1.582e+03   
+      16             22          7.720e+00      2.886e+00      1.630e-01      1.119e+03   
+      17             24          6.328e+00      1.392e+00      8.458e-02      1.102e+03   
+      18             25          5.205e+00      1.123e+00      7.639e-02      8.709e+02   
+      19             26          4.147e+00      1.058e+00      8.135e-02      5.441e+02   
+      20             27          4.054e+00      9.214e-02      1.352e-01      4.459e+02   
+      21             28          3.456e+00      5.989e-01      3.841e-02      9.550e+01   
+      22             29          3.436e+00      1.965e-02      7.972e-02      9.908e+01   
+      23             30          3.299e+00      1.368e-01      2.264e-02      1.401e+01   
+      24             32          3.282e+00      1.741e-02      9.945e-03      1.538e+01   
+      25             33          3.281e+00      8.956e-04      9.492e-03      4.618e+00   
+      26             34          3.276e+00      5.223e-03      2.853e-03      3.000e+00   
+      27             35          3.267e+00      8.484e-03      5.415e-03      4.932e+00   
+      28             36          3.263e+00      3.643e-03      9.297e-03      6.031e+00   
+      29             38          3.263e+00      5.832e-04      2.394e-03      1.208e+00   
+      30             39          3.262e+00      3.888e-04      5.351e-04      1.236e+00   
+      31             40          3.262e+00      4.158e-04      6.515e-04      1.107e+00   
+      32             41          3.261e+00      6.119e-04      6.053e-04      7.382e-01   
+      33             42          3.261e+00      8.111e-04      1.203e-03      1.056e+00   
+      34             43          3.260e+00      1.136e-03      1.280e-03      1.154e+00   
+      35             44          3.258e+00      1.192e-03      2.420e-03      1.143e+00   
+      36             45          3.258e+00      3.244e-04      2.235e-03      2.156e+00   
+      37             46          3.258e+00      1.920e-04      6.230e-04      7.200e-01   
+      38             47          3.258e+00      2.617e-05      5.555e-04      9.720e-01   
+      39             69          3.258e+00      0.000e+00      0.000e+00      9.720e-01   
+Warning: A bad approximation caused failure to predict improvement.
+         Current function value: 3.258e+00
+         Total delta_x: 1.952e+00
+         Iterations: 39
+         Function evaluations: 69
+         Jacobian evaluations: 39
+Timer: Solution time = 6.98 min
+Timer: Avg time per step = 10.4 sec
+==============================================================================================================
+                                                                 Start  -->   End
+Total (sum of squares):                                      5.494e+02  -->   3.258e+00, 
+Maximum Trapped EP Resonance Penalty:                        1.281e-01  -->   2.374e-03 ~
+Minimum Trapped EP Resonance Penalty:                        0.000e+00  -->   0.000e+00 ~
+Average Trapped EP Resonance Penalty:                        2.034e-02  -->   2.839e-04 ~
+Maximum Trapped EP Resonance Penalty:                        1.281e-01  -->   2.374e-03 (normalized)
+Minimum Trapped EP Resonance Penalty:                        0.000e+00  -->   0.000e+00 (normalized)
+Average Trapped EP Resonance Penalty:                        2.034e-02  -->   2.839e-04 (normalized)
+Maximum Rotational transform:                               -3.597e-01  -->  -5.414e-01 (dimensionless)
+Minimum Rotational transform:                               -3.950e-01  -->  -5.598e-01 (dimensionless)
+Average Rotational transform:                               -3.806e-01  -->  -5.499e-01 (dimensionless)
+Maximum Quasi-symmetry (1,0) two-term normalized error:      2.348e+00  -->   6.610e-01 (T^2/m^2)
+Minimum Quasi-symmetry (1,0) two-term normalized error:     -1.375e+00  -->  -6.685e-01 (T^2/m^2)
+Average Quasi-symmetry (1,0) two-term normalized error:      1.104e-02  -->   4.491e-05 (T^2/m^2)
+Maximum Quasi-symmetry (1,0) two-term normalized error:      1.380e+00  -->   3.885e-01 (normalized)
+Minimum Quasi-symmetry (1,0) two-term normalized error:     -8.080e-01  -->  -3.929e-01 (normalized)
+Average Quasi-symmetry (1,0) two-term normalized error:      6.488e-03  -->   2.640e-05 (normalized)
+Aspect ratio:                                                2.841e+00  -->   3.296e+00 (dimensionless)
+Maximum absolute Force error:                                9.579e+06  -->   3.124e+07 (N)
+Minimum absolute Force error:                                5.294e+03  -->   3.693e+03 (N)
+Average absolute Force error:                                8.695e+05  -->   2.098e+06 (N)
+Maximum absolute Force error:                                4.210e-03  -->   1.373e-02 (normalized)
+Minimum absolute Force error:                                2.327e-06  -->   1.623e-06 (normalized)
+Average absolute Force error:                                3.822e-04  -->   9.221e-04 (normalized)
+R boundary error:                                            8.882e-16  -->   4.235e-22 (m)
+Z boundary error:                                            7.205e-20  -->   2.118e-22 (m)
+Fixed pressure profile error:                                0.000e+00  -->   0.000e+00 (Pa)
+Fixed current profile error:                                 0.000e+00  -->   0.000e+00 (A)
+Fixed Psi error:                                             0.000e+00  -->   0.000e+00 (Wb)
+==============================================================================================================
+
+    [after k=2 stage 1/2 qs_bound=0.2 tr_res=5/1]
+      |F|/F_scale  max=6.450e-04  mean=8.644e-05
+      mean(iota)   = -0.548399   (target -0.580000)
+      aspect_ratio = 3.2956
+      max|f_C|/B^3 per surface  rho=0.25:5.037e-02  rho=0.50:1.078e-01  rho=0.75:1.863e-01  rho=1.00:3.772e-01   global=3.772e-01
+      mirror per surface  rho=0.25:0.043  rho=0.50:0.089  rho=0.75:0.138  rho=1.00:0.189   global_max=0.189
+
+--- Multigrid k=3 stage 1/2 qs_bound=0.2 tr_res=5/1, helicity=(1, 0) (QA) ---
+Building objective: TrappedResonance
+Precomputing transforms
+Timer: Precomputing transforms = 80.1 ms
+Building objective: rotational transform
+Precomputing transforms
+Timer: Precomputing transforms = 43.3 ms
+Building objective: QS two-term normalized
+Precomputing transforms
+Timer: Precomputing transforms = 92.0 ms
+Building objective: aspect ratio
+Precomputing transforms
+Timer: Precomputing transforms = 39.6 ms
+Timer: Objective build = 287 ms
+Building objective: force
+Precomputing transforms
+Timer: Precomputing transforms = 95.6 ms
+Timer: Objective build = 106 ms
+Timer: Objective build = 2.12 ms
+Timer: Eq Update LinearConstraintProjection build = 52.6 ms
+Timer: Proximal projection build = 1.16 sec
+Building objective: lcfs R
+Building objective: lcfs Z
+Building objective: fixed pressure
+Building objective: fixed current
+Building objective: fixed Psi
+Timer: Objective build = 298 ms
+Timer: LinearConstraintProjection build = 1.91 sec
+Number of parameters: 48
+Number of objectives: 697
+Timer: Initializing the optimization = 3.97 sec
+
+Starting optimization
+Using method: proximal-lsq-exact
+Solver options:
+------------------------------------------------------------
+Maximum Function Evaluations       : 501
+Maximum Allowed Total Δx Norm      : inf
+Scaled Termination                 : True
+Trust Region Method                : qr
+Initial Trust Radius               : 1.000e+00
+Maximum Trust Radius               : inf
+Minimum Trust Radius               : 2.220e-16
+Trust Radius Increase Ratio        : 2.000e+00
+Trust Radius Decrease Ratio        : 2.500e-01
+Trust Radius Increase Threshold    : 7.500e-01
+Trust Radius Decrease Threshold    : 2.500e-01
+------------------------------------------------------------ 
+
+   Iteration     Total nfev        Cost      Cost reduction    Step norm     Optimality   
+       0              1          9.633e+00                                    4.338e+02   
+       1              2          5.457e+00      4.176e+00      1.744e-01      4.976e+02   
+       2              4          1.487e+00      3.970e+00      7.121e-02      3.105e+02   
+       3              6          5.965e-01      8.907e-01      3.902e-02      1.217e+02   
+       4              9          5.922e-01      4.226e-03      4.306e-03      1.430e+02   
+       5             10          3.823e-01      2.099e-01      1.788e-03      7.118e+00   
+       6             11          3.492e-01      3.310e-02      1.894e-03      6.661e+00   
+       7             12          3.059e-01      4.333e-02      3.290e-03      3.725e+00   
+       8             13          2.354e-01      7.045e-02      7.716e-03      2.037e+01   
+       9             15          2.090e-01      2.646e-02      3.889e-03      2.747e+01   
+      10             16          1.577e-01      5.130e-02      7.696e-03      3.588e+01   
+      11             19          1.517e-01      5.988e-03      1.354e-03      1.374e+01   
+      12             20          1.423e-01      9.406e-03      9.597e-04      3.369e+00   
+      13             21          1.316e-01      1.070e-02      1.921e-03      7.156e+00   
+      14             22          1.130e-01      1.856e-02      3.678e-03      1.940e+01   
+      15             23          8.325e-02      2.976e-02      5.919e-03      3.416e+01   
+      16             24          5.983e-02      2.342e-02      1.273e-02      5.438e+01   
+      17             25          2.061e-02      3.922e-02      1.353e-02      1.804e+01   
+      18             27          1.195e-02      8.659e-03      1.059e-02      2.856e+01   
+      19             28          7.894e-03      4.053e-03      7.369e-03      5.229e+00   
+      20             29          6.692e-03      1.201e-03      1.133e-02      1.735e+00   
+      21             31          6.092e-03      6.001e-04      2.393e-03      3.763e+00   
+      22             32          6.023e-03      6.954e-05      4.335e-03      2.572e+00   
+      23             34          5.738e-03      2.846e-04      1.729e-04      1.376e+00   
+      24             35          5.729e-03      9.117e-06      1.389e-04      3.595e+00   
+      25             36          5.586e-03      1.433e-04      5.785e-05      9.945e-01   
+      26             38          5.582e-03      3.746e-06      2.511e-05      6.478e-01   
+      27             39          5.579e-03      2.508e-06      8.244e-06      1.464e-01   
+      28             41          5.578e-03      9.575e-07      2.896e-06      3.082e-01   
+      29             42          5.578e-03      6.889e-07      3.743e-06      4.090e-02   
+      30             43          5.577e-03      8.279e-07      3.383e-06      4.059e-02   
+      31             44          5.576e-03      1.363e-06      6.675e-06      4.041e-02   
+      32             46          5.575e-03      7.059e-07      3.276e-06      4.047e-02   
+      33             49          5.575e-03      1.217e-07      4.134e-07      4.024e-02   
+      34             51          5.575e-03      8.878e-09      2.065e-07      3.985e-02   
+      35             52          5.575e-03      5.498e-08      5.174e-08      4.018e-02   
+      36             53          5.575e-03      4.426e-09      1.031e-07      3.998e-02   
+      37             54          5.575e-03      1.068e-09      2.580e-08      3.995e-02   
+      38             55          5.575e-03      2.651e-10      6.453e-09      3.995e-02   
+      39             56          5.575e-03      6.614e-11      1.613e-09      3.994e-02   
+      40             57          5.575e-03      1.656e-11      4.034e-10      3.994e-02   
+      41             58          5.575e-03      4.125e-12      1.008e-10      3.994e-02   
+      42             59          5.575e-03      1.007e-12      2.521e-11      3.994e-02   
+      43             60          5.575e-03      2.659e-13      6.303e-12      3.994e-02   
+      44             61          5.575e-03      6.123e-14      1.576e-12      3.994e-02   
+      45             62          5.575e-03      1.534e-14      3.939e-13      3.994e-02   
+      46             63          5.575e-03      3.455e-14      9.848e-14      3.994e-02   
+Optimization terminated successfully.
+`ftol` condition satisfied. (ftol=1.00e-10)
+`xtol` condition satisfied. (xtol=1.00e-10)
+         Current function value: 5.575e-03
+         Total delta_x: 2.451e-01
+         Iterations: 46
+         Function evaluations: 63
+         Jacobian evaluations: 47
+Timer: Solution time = 12.8 min
+Timer: Avg time per step = 16.4 sec
+==============================================================================================================
+                                                                 Start  -->   End
+Total (sum of squares):                                      9.633e+00  -->   5.575e-03, 
+Maximum Trapped EP Resonance Penalty:                        2.377e-03  -->   8.536e-04 ~
+Minimum Trapped EP Resonance Penalty:                        0.000e+00  -->   0.000e+00 ~
+Average Trapped EP Resonance Penalty:                        2.845e-04  -->   1.476e-04 ~
+Maximum Trapped EP Resonance Penalty:                        2.377e-03  -->   8.536e-04 (normalized)
+Minimum Trapped EP Resonance Penalty:                        0.000e+00  -->   0.000e+00 (normalized)
+Average Trapped EP Resonance Penalty:                        2.845e-04  -->   1.476e-04 (normalized)
+Maximum Rotational transform:                               -5.414e-01  -->  -5.772e-01 (dimensionless)
+Minimum Rotational transform:                               -5.598e-01  -->  -5.823e-01 (dimensionless)
+Average Rotational transform:                               -5.499e-01  -->  -5.799e-01 (dimensionless)
+Maximum Quasi-symmetry (1,0) two-term normalized error:      6.610e-01  -->   2.850e-01 (T^2/m^2)
+Minimum Quasi-symmetry (1,0) two-term normalized error:     -6.685e-01  -->  -2.850e-01 (T^2/m^2)
+Average Quasi-symmetry (1,0) two-term normalized error:      4.491e-05  -->   2.058e-04 (T^2/m^2)
+Maximum Quasi-symmetry (1,0) two-term normalized error:      4.662e-01  -->   2.010e-01 (normalized)
+Minimum Quasi-symmetry (1,0) two-term normalized error:     -4.715e-01  -->  -2.010e-01 (normalized)
+Average Quasi-symmetry (1,0) two-term normalized error:      3.168e-05  -->   1.452e-04 (normalized)
+Aspect ratio:                                                3.296e+00  -->   3.310e+00 (dimensionless)
+Maximum absolute Force error:                                3.124e+07  -->   2.761e+07 (N)
+Minimum absolute Force error:                                3.693e+03  -->   1.060e+03 (N)
+Average absolute Force error:                                2.098e+06  -->   1.496e+06 (N)
+Maximum absolute Force error:                                1.504e-02  -->   1.329e-02 (normalized)
+Minimum absolute Force error:                                1.778e-06  -->   5.104e-07 (normalized)
+Average absolute Force error:                                1.010e-03  -->   7.205e-04 (normalized)
+R boundary error:                                            8.882e-16  -->   0.000e+00 (m)
+Z boundary error:                                            3.668e-22  -->   0.000e+00 (m)
+Fixed pressure profile error:                                0.000e+00  -->   0.000e+00 (Pa)
+Fixed current profile error:                                 0.000e+00  -->   0.000e+00 (A)
+Fixed Psi error:                                             0.000e+00  -->   0.000e+00 (Wb)
+==============================================================================================================
+
+    [after k=3 stage 1/2 qs_bound=0.2 tr_res=5/1]
+      |F|/F_scale  max=5.012e-04  mean=6.142e-05
+      mean(iota)   = -0.579489   (target -0.580000)
+      aspect_ratio = 3.3101
+      max|f_C|/B^3 per surface  rho=0.25:4.351e-02  rho=0.50:8.705e-02  rho=0.75:1.306e-01  rho=1.00:1.749e-01   global=1.749e-01
+      mirror per surface  rho=0.25:0.043  rho=0.50:0.088  rho=0.75:0.132  rho=1.00:0.177   global_max=0.177
+
+--- Multigrid k=4 stage 1/2 qs_bound=0.2 tr_res=5/1, helicity=(1, 0) (QA) ---
+Building objective: TrappedResonance
+Precomputing transforms
+Timer: Precomputing transforms = 77.0 ms
+Building objective: rotational transform
+Precomputing transforms
+Timer: Precomputing transforms = 40.1 ms
+Building objective: QS two-term normalized
+Precomputing transforms
+Timer: Precomputing transforms = 86.6 ms
+Building objective: aspect ratio
+Precomputing transforms
+Timer: Precomputing transforms = 39.0 ms
+Timer: Objective build = 274 ms
+Building objective: force
+Precomputing transforms
+Timer: Precomputing transforms = 95.4 ms
+Timer: Objective build = 106 ms
+Timer: Objective build = 1.99 ms
+Timer: Eq Update LinearConstraintProjection build = 53.3 ms
+Timer: Proximal projection build = 1.13 sec
+Building objective: lcfs R
+Building objective: lcfs Z
+Building objective: fixed pressure
+Building objective: fixed current
+Building objective: fixed Psi
+Timer: Objective build = 141 ms
+Timer: LinearConstraintProjection build = 1.92 sec
+Number of parameters: 80
+Number of objectives: 697
+Timer: Initializing the optimization = 3.82 sec
+
+Starting optimization
+Using method: proximal-lsq-exact
+Solver options:
+------------------------------------------------------------
+Maximum Function Evaluations       : 501
+Maximum Allowed Total Δx Norm      : inf
+Scaled Termination                 : True
+Trust Region Method                : qr
+Initial Trust Radius               : 1.000e+00
+Maximum Trust Radius               : inf
+Minimum Trust Radius               : 2.220e-16
+Trust Radius Increase Ratio        : 2.000e+00
+Trust Radius Decrease Ratio        : 2.500e-01
+Trust Radius Increase Threshold    : 7.500e-01
+Trust Radius Decrease Threshold    : 2.500e-01
+------------------------------------------------------------ 
+
+   Iteration     Total nfev        Cost      Cost reduction    Step norm     Optimality   
+       0              1          1.922e-01                                    1.132e+02   
+       1              4          1.051e-01      8.708e-02      2.465e-02      1.845e+02   
+       2              6          1.552e-02      8.956e-02      6.252e-03      3.715e+01   
+       3              9          8.927e-03      6.590e-03      7.346e-04      2.496e+01   
+       4             10          7.276e-03      1.652e-03      7.924e-04      1.649e+01   
+       5             11          6.885e-03      3.904e-04      1.120e-03      1.968e+01   
+       6             13          6.092e-03      7.937e-04      1.677e-04      6.460e+00   
+       7             14          5.789e-03      3.027e-04      4.614e-04      2.964e+00   
+       8             15          5.520e-03      2.687e-04      5.196e-04      3.867e-01   
+       9             16          5.326e-03      1.946e-04      9.026e-04      6.804e-01   
+      10             17          5.105e-03      2.210e-04      8.662e-04      4.077e-01   
+      11             18          5.021e-03      8.357e-05      1.135e-03      2.959e+00   
+      12             22          4.979e-03      4.186e-05      3.066e-05      1.896e+00   
+      13             23          4.949e-03      3.064e-05      2.863e-05      5.895e-01   
+      14             24          4.942e-03      6.803e-06      2.156e-05      4.843e-01   
+      15             25          4.940e-03      2.058e-06      4.176e-05      4.875e-01   
+      16             26          4.938e-03      1.958e-06      1.024e-05      1.986e-02   
+      17             27          4.937e-03      1.098e-06      1.771e-05      4.730e-02   
+      18             28          4.934e-03      2.692e-06      1.859e-05      3.493e-02   
+      19             29          4.929e-03      4.614e-06      4.441e-05      6.090e-02   
+      20             30          4.918e-03      1.132e-05      9.737e-05      1.183e-01   
+      21             31          4.906e-03      1.194e-05      1.281e-04      2.633e-01   
+      22             32          4.882e-03      2.460e-05      4.538e-04      4.784e-01   
+      23             39          4.881e-03      4.204e-07      3.803e-07      3.961e-01   
+      24             41          4.881e-03      1.877e-07      1.835e-07      3.499e-01   
+      25             42          4.880e-03      9.173e-07      3.462e-07      3.891e-01   
+      26             46          4.880e-03      8.587e-09      1.401e-08      3.613e-01   
+      27             47          4.880e-03      1.568e-08      2.788e-08      3.160e-01   
+      28             51          4.880e-03      4.698e-10      8.646e-10      3.147e-01   
+      29             53          4.880e-03      2.223e-10      4.322e-10      3.141e-01   
+Optimization terminated successfully.
+`xtol` condition satisfied. (xtol=1.00e-10)
+         Current function value: 4.880e-03
+         Total delta_x: 2.634e-02
+         Iterations: 29
+         Function evaluations: 53
+         Jacobian evaluations: 30
+Timer: Solution time = 13.3 min
+Timer: Avg time per step = 26.7 sec
+==============================================================================================================
+                                                                 Start  -->   End
+Total (sum of squares):                                      1.922e-01  -->   4.880e-03, 
+Maximum Trapped EP Resonance Penalty:                        8.536e-04  -->   9.871e-04 ~
+Minimum Trapped EP Resonance Penalty:                        0.000e+00  -->   0.000e+00 ~
+Average Trapped EP Resonance Penalty:                        1.476e-04  -->   1.576e-04 ~
+Maximum Trapped EP Resonance Penalty:                        8.536e-04  -->   9.871e-04 (normalized)
+Minimum Trapped EP Resonance Penalty:                        0.000e+00  -->   0.000e+00 (normalized)
+Average Trapped EP Resonance Penalty:                        1.476e-04  -->   1.576e-04 (normalized)
+Maximum Rotational transform:                               -5.772e-01  -->  -5.768e-01 (dimensionless)
+Minimum Rotational transform:                               -5.823e-01  -->  -5.820e-01 (dimensionless)
+Average Rotational transform:                               -5.799e-01  -->  -5.799e-01 (dimensionless)
+Maximum Quasi-symmetry (1,0) two-term normalized error:      2.850e-01  -->   2.614e-01 (T^2/m^2)
+Minimum Quasi-symmetry (1,0) two-term normalized error:     -2.850e-01  -->  -2.610e-01 (T^2/m^2)
+Average Quasi-symmetry (1,0) two-term normalized error:      2.058e-04  -->  -3.273e-05 (T^2/m^2)
+Maximum Quasi-symmetry (1,0) two-term normalized error:      2.186e-01  -->   2.005e-01 (normalized)
+Minimum Quasi-symmetry (1,0) two-term normalized error:     -2.186e-01  -->  -2.002e-01 (normalized)
+Average Quasi-symmetry (1,0) two-term normalized error:      1.579e-04  -->  -2.511e-05 (normalized)
+Aspect ratio:                                                3.310e+00  -->   3.300e+00 (dimensionless)
+Maximum absolute Force error:                                2.761e+07  -->   2.785e+07 (N)
+Minimum absolute Force error:                                1.060e+03  -->   4.914e+03 (N)
+Average absolute Force error:                                1.496e+06  -->   1.425e+06 (N)
+Maximum absolute Force error:                                1.386e-02  -->   1.399e-02 (normalized)
+Minimum absolute Force error:                                5.323e-07  -->   2.467e-06 (normalized)
+Average absolute Force error:                                7.514e-04  -->   7.157e-04 (normalized)
+R boundary error:                                            8.882e-16  -->   0.000e+00 (m)
+Z boundary error:                                            0.000e+00  -->   0.000e+00 (m)
+Fixed pressure profile error:                                0.000e+00  -->   0.000e+00 (Pa)
+Fixed current profile error:                                 0.000e+00  -->   0.000e+00 (A)
+Fixed Psi error:                                             0.000e+00  -->   0.000e+00 (Wb)
+==============================================================================================================
+
+    [after k=4 stage 1/2 qs_bound=0.2 tr_res=5/1]
+      |F|/F_scale  max=4.785e-04  mean=5.860e-05
+      mean(iota)   = -0.579590   (target -0.580000)
+      aspect_ratio = 3.3000
+      max|f_C|/B^3 per surface  rho=0.25:4.103e-02  rho=0.50:8.207e-02  rho=0.75:1.231e-01  rho=1.00:1.645e-01   global=1.645e-01
+      mirror per surface  rho=0.25:0.043  rho=0.50:0.088  rho=0.75:0.131  rho=1.00:0.175   global_max=0.175
+    [FINAL]
+      |F|/F_scale  max=4.785e-04  mean=5.860e-05
+      mean(iota)   = -0.579590   (target -0.580000)
+      aspect_ratio = 3.3000
+      max|f_C|/B^3 per surface  rho=0.25:4.103e-02  rho=0.50:8.207e-02  rho=0.75:1.231e-01  rho=1.00:1.645e-01   global=1.645e-01
+      mirror per surface  rho=0.25:0.043  rho=0.50:0.088  rho=0.75:0.131  rho=1.00:0.175   global_max=0.175
+
+FINAL TR (max=3.240e-03, mean=1.589e-04, sumsq=1.706e-05)
+
+Wrote manifest: /pscratch/sd/e/epaul/research/20260313_precise_QA_opt_example/scan_runs/iota_scan60_20260707_nfp2_AR3p5_iota058_hpsweep/job_002_nfp2_QA_AR3p5_iota0p58_stab_trw10p0_qsw5p0_pq8_eta40_100it/manifest.json

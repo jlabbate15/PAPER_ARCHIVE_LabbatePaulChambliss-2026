@@ -1,0 +1,14 @@
+interpolation time:  18.109994173049927
+minB:  4.46608816496712
+maxB:  6.453387929863838
+Computing trapped frequencies for lam = 0.15495736671467994
+Computing trapped frequencies for lam = 0.1626187256058081
+Computing trapped frequencies for lam = 0.17028008449693627
+Computing trapped frequencies for lam = 0.17794144338806442
+Computing trapped frequencies for lam = 0.1856028022791926
+Computing trapped frequencies for lam = 0.19326416117032075
+Computing trapped frequencies for lam = 0.20092552006144893
+Computing trapped frequencies for lam = 0.20858687895257708
+Computing trapped frequencies for lam = 0.21624823784370523
+Computing trapped frequencies for lam = 0.2239095967348334
+poincare time:  730.6703472137451

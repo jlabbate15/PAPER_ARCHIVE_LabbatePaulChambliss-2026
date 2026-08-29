@@ -1,0 +1,40 @@
+Traceback (most recent call last):
+
+  File "/Users/elizabethpaul/Elizabeth Paul Dropbox/Elizabeth J. Paul/Princeton Dropbox data/July_2026/20260711_DESC_TR_opt/scan60/trapped_frequencies.py", line 46, in <module>
+    bri = BoozerRadialInterpolant(
+        equil_filename, order, no_K=True, comm=comm_world,
+    )
+
+  File "/Users/elizabethpaul/Documents/Research/firm3d/src/firm3d/field/boozermagneticfield.py", line 2037, in __init__
+    raise ValueError("Invalid filename")
+
+ValueError: Invalid filename
+
+interpolation time:  18.408525943756104
+minB:  4.341373833229269
+maxB:  6.2189847761509744
+Computing trapped frequencies for lam = 0.1607979495037316
+Computing trapped frequencies for lam = 0.16852504750402836
+Computing trapped frequencies for lam = 0.17625214550432508
+Computing trapped frequencies for lam = 0.18397924350462183
+Computing trapped frequencies for lam = 0.19170634150491858
+Computing trapped frequencies for lam = 0.1994334395052153
+Computing trapped frequencies for lam = 0.20716053750551205
+Computing trapped frequencies for lam = 0.2148876355058088
+Computing trapped frequencies for lam = 0.22261473350610553
+Computing trapped frequencies for lam = 0.23034183150640228
+poincare time:  46.60901713371277
+interpolation time:  17.97684621810913
+minB:  4.477408054123417
+maxB:  6.1820981534506805
+Computing trapped frequencies for lam = 0.1617573799668365
+Computing trapped frequencies for lam = 0.16860028254671539
+Computing trapped frequencies for lam = 0.17544318512659426
+Computing trapped frequencies for lam = 0.18228608770647314
+Computing trapped frequencies for lam = 0.189128990286352
+Computing trapped frequencies for lam = 0.1959718928662309
+Computing trapped frequencies for lam = 0.20281479544610975
+Computing trapped frequencies for lam = 0.20965769802598863
+Computing trapped frequencies for lam = 0.2165006006058675
+Computing trapped frequencies for lam = 0.2233435031857464
+poincare time:  727.1140961647034

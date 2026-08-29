@@ -1,0 +1,3 @@
++ srun -n1 --gpus-per-task=1 python -u scan_desc_gc.py --job-dir scan_runs/iota_scan62_20260710_nfp2_AR3p5_iota058_noTR_baseline/job_001_nfp2_QA_AR3p5_iota0p58_stab_trw0p0_qsw5p0_pq8_eta40_100it --eq-name final.h5 --n-particles 50000 --tmax 1e-2 --tmin 1e-5 --n-ts 200 --rtol 1e-6 --atol 1e-6 --num-rho-fB 16 --seed 42
++ mv -f scan_runs/logs/gc-s62-55748518.out scan_runs/iota_scan62_20260710_nfp2_AR3p5_iota058_noTR_baseline/job_001_nfp2_QA_AR3p5_iota0p58_stab_trw0p0_qsw5p0_pq8_eta40_100it/slurm_gc_55748518.out
++ mv -f scan_runs/logs/gc-s62-55748518.err scan_runs/iota_scan62_20260710_nfp2_AR3p5_iota058_noTR_baseline/job_001_nfp2_QA_AR3p5_iota0p58_stab_trw0p0_qsw5p0_pq8_eta40_100it/slurm_gc_55748518.err

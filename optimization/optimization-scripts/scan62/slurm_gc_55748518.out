@@ -1,0 +1,23 @@
+GC tracing: scan_runs/iota_scan62_20260710_nfp2_AR3p5_iota058_noTR_baseline/job_001_nfp2_QA_AR3p5_iota0p58_stab_trw0p0_qsw5p0_pq8_eta40_100it
+DESC-native GC tracing for job_001_nfp2_QA_AR3p5_iota0p58_stab_trw0p0_qsw5p0_pq8_eta40_100it
+  equilibrium : /pscratch/sd/e/epaul/research/20260313_precise_QA_opt_example/scan_runs/iota_scan62_20260710_nfp2_AR3p5_iota058_noTR_baseline/job_001_nfp2_QA_AR3p5_iota0p58_stab_trw0p0_qsw5p0_pq8_eta40_100it/final.h5
+  n_particles : 50000
+  tmax        : 0.01
+Loading equilibrium...
+  NFP=2  L=4  M=4  N=4
+Computing f_B (native Boozer transform)...
+  f_B max=0.0334  mean=0.0179  edge=0.0334  (8.4s)
+Sampling fusion birth distribution...
+Initializing particles (computing mu from |B| in chunks)...
+Tracing particles...
+  Tracing done in 597.6s
+Wrote /pscratch/sd/e/epaul/research/20260313_precise_QA_opt_example/scan_runs/iota_scan62_20260710_nfp2_AR3p5_iota058_noTR_baseline/job_001_nfp2_QA_AR3p5_iota0p58_stab_trw0p0_qsw5p0_pq8_eta40_100it/desc_gc_particles.npz  (per-particle rho0, theta0, zeta0, xi0, mu, B_crit, lost)
+Wrote /pscratch/sd/e/epaul/research/20260313_precise_QA_opt_example/scan_runs/iota_scan62_20260710_nfp2_AR3p5_iota058_noTR_baseline/job_001_nfp2_QA_AR3p5_iota0p58_stab_trw0p0_qsw5p0_pq8_eta40_100it/desc_gc_loss.json
+  loss_at_tmax = 1.35%
+  loss_at_1ms  = 0.83%
+  loss_at_3ms  = 1.06%
+  fB_max       = 0.0334
+Wrote /pscratch/sd/e/epaul/research/20260313_precise_QA_opt_example/scan_runs/iota_scan62_20260710_nfp2_AR3p5_iota058_noTR_baseline/job_001_nfp2_QA_AR3p5_iota0p58_stab_trw0p0_qsw5p0_pq8_eta40_100it/desc_gc_loss.png
+  B_min=4.231 T  B_max=6.521 T
+  Trapped: 20312 / 50000 (40.6%)   lost among trapped: 3.32%
+Wrote /pscratch/sd/e/epaul/research/20260313_precise_QA_opt_example/scan_runs/iota_scan62_20260710_nfp2_AR3p5_iota058_noTR_baseline/job_001_nfp2_QA_AR3p5_iota0p58_stab_trw0p0_qsw5p0_pq8_eta40_100it/desc_gc_Bcrit.png
